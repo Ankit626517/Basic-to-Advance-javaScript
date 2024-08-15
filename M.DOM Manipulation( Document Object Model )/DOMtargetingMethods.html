@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>DOM targeting Methods</title>
+</head>
+<body>
+    <nav id="Navbar">
+        <a href="*" class="Logo">Logo</a>
+        <ul>
+            <li><a href="*">Home</a> </li>
+            <li><a href="*">About</a> </li>
+            <li><a href="*">Contact</a> </li>
+            <li><a href="*">Feedback</a> </li>
+        </ul>
+        <button >Login</button>
+    </nav>
+
+    <script>
+        // id =>   document.getElementById
+        const targetId = document.getElementById("Navbar");
+        // console.log(targetId);
+        console.log(targetId);
+
+        // class Name  =>  document.getElementsByClassName
+        const targetClass=document.getElementsByClassName("LOgo");
+        console.log(targetClass);
+
+
+        // tag name  => document.getElementsByTagName
+        const targetTag = document.getElementsByTagName("li");
+        console.log(targetTag)
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <title>Other dom targeting selectors</title>
+</head>
+<body>
+ <h4 class="hy1">Hello I  web devloper</h4>
+ <p class="hy">Hello  </p>
+ <h1 >Hello I am you and is also me </h1>
+ <h4 class="hy1">Hello  </h4>
+ <script>
+     1.// The querySelector(
+    // The querySelector() method returns the first child element that matches a specified CSS selector(s) of an element.
+    // Note: The querySelector() method only returns the first element that matches the specified selectors. To return all the matches, use the querySelectorAll() method instead.
+    const a=document.querySelector("p.hy");
+    a.style.color="red";    
+    a.style.fontSize="50px";
+
+    // 2. The querySelectorAll()
+    const b=document.querySelectorAll("h4.hy1");
+  
+    for (let i = 0; i < b.length; i++) {
+  b[i].style.color = "green";
+}
+    
+
+    
+
+    
+ </script>
+
+    
+</body>
+</html>

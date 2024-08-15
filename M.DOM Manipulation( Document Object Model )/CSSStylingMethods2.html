@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>CSS Styling Methods 2</title>
+</head>
+<body>
+    <!-- There are three methods to style CSS (style,className and classList) -->
+
+    <!-- 1. Style Method (use to set and get style of inline CSS) -->
+     <!-- Example of set style -->
+    <p class="set">Hello i am ankit</p>
+    <!-- Example of get style -->
+    <p class="get">Hello i am webdevloper</p>
+
+
+    <!-- 2. className Method (use to set and get className)  -->
+    <!-- set className -->
+    <h1 id="set">Hello</h1>
+      <!-- get className -->
+    <h2 id="set">welcome</h2>
+
+
+
+
+
+
+    <script>
+
+    // Example of set style
+
+        var setmethod=document.querySelector("p.set")
+        setmethod.style.color="red";
+        setmethod.style.fontSize="30px";
+        console.log(setmethod);
+
+        // Example of get style
+        var getmethod=document.querySelector("p.get").color;
+        console.log(getmethod)
+
+        // 2. className Method (use to set and get className)
+
+        //  set className 
+        var setclass=document.querySelector("h1.set")
+        var b=setclass.className="setclass"
+
+          // get className
+
+          var getclass=document.getElementById("get").className
+          console.log(getclass)
+
+    </script>
+    
+</body>
+</html>

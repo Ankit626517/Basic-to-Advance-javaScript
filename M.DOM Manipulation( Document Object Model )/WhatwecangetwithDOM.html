@@ -1,0 +1,45 @@
+<!-- 
+    What we can get with DOM?
+     We can get Text, HTML and Attribute with the help of DOM -->
+
+    <!-- 1.  innerText:- Use to Get the text of the targeted ID, CLASS or TAG.  -->
+    <!-- 2. innerHTML:  Use to Get the complete HTML tag -->
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        
+        <title>What we can get with DOM?        </title>
+    </head>
+    <body>
+        <nav id="Navbar">
+            <div id="myDiv"></div>
+
+            <h1 id="h1"></h1>
+            <b class="hello"></b>
+            <a href="*" class="Logo">Logo</a>
+            <ul>
+                <li><a href="*">Home</a> </li>
+                <li><a href="*">About</a> </li>
+                <li><a href="*">Contact</a> </li>
+                <li><a href="*">Feedback</a> </li>
+            </ul>
+            <button >Login</button>
+        </nav>
+
+        <script>
+            //  1.  innerText:- Use to Get the text of the targeted ID, CLASS or TAG. 
+            const targetId = document.getElementById("h1").innerHTML="<h1>Apna Shop</h1>" ;
+            console.log(targetId);
+
+            // <!-- 2. innerHTML:  Use to Get the complete HTML tag -->
+            document.getElementById("myDiv").innerHTML = "<p>Hello World!</p><span>This is a span element</span>";
+
+
+
+        </script>
+        
+    </body>
+    </html>
+
+

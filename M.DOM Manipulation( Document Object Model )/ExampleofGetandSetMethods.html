@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title> Example of Get and Set Methods </title>
+</head>
+<body>
+    <a href="https://www.google.com/"  id="url">google or youtub</a>
+    <br>
+    <button onclick="GetValue()" >Getvalue</button><br>
+    <button onclick="SetValue()" >Setvalue</button>
+    <script>
+        function GetValue() {
+            var url = document.getElementById("url").getAttribute("href");
+            console.log(url)
+        }
+        function SetValue() {
+            var url1 = document.getElementById("url").setAttribute("href", "https://www.youtube.com/");
+            console.log(url1);
+            
+        }
+        
+    
+    </script>
+</body>
+</html>
