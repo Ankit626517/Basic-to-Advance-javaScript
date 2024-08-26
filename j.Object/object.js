@@ -32,7 +32,7 @@
     name: 'Rahim',
     age: 25,
  })
- console.log(emp);
+ console.log(emp["name"]);
 
  
 
